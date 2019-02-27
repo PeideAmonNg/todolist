@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <style>
+        input[type='submit'], button, [aria-label] {
+            cursor: pointer;
+        }
+
+        #spoiler {
+            display: none;
+        }
+
+        table {
+            font-family: Arial, sans-serif;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #0066CC;
+            color: white;
+        }
+
+        td {
+            border: 1px solid;
+            padding: 5px;
+        }
+
+        .navbar {
+            background-color: #494949 !important;
+            color: white;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .todoContainer {
+            display: flex;
+            padding: 10px;
+            -webkit-transition: background-color 0.5s;
+            -moz-transition: background-color 0.5s;
+            -o-transition: background-color 0.5s;
+            transition: background-color 0.5s;
+        }
+
+        .commands {
+            display: none;
+            -webkit-transition: display 0.5s;
+            -moz-transition: display 0.5s;
+            -o-transition: display 0.5s;
+            transition: display 0.5s;
+        }
+
+            .commands span {
+                margin: 0 2px;
+            }
+
+        .todoContainer:hover {
+            background-color: lightgray;
+        }
+
+            .todoContainer:hover .commands {
+                display: block;
+            }
+
+        .todoName {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+
+        input[type="checkbox"], .fa {
+            vertical-align: middle;
+        }
+
+        .container {
+            max-width: 540px;
+        }
+
+        #add-name {
+            flex-grow: 1;
+        }
+
+        #addTodoForm {
+            width: 100%;
+            display: flex;
+        }
+    </style>
+</head>
+
+</html>
